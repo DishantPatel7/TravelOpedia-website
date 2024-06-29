@@ -1,29 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
 *{
     margin:0;
     padding:0;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
+
+body {
+    background: url(images/river.jpg);
+    background-size: cover;
+    max-height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
 .hero{
     height:100%;
     width:100%;
-    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url();
+    /* background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/img-3.jpg); */
     background-position:center;
     background-size:cover;
     position:absolute;
 }
+
+/* #myvideo{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  height: auto;
+  z-index: -1;
+} */
+
+.home-btn{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+
+.home-btn .btn {
+    border: 1px solid #fff;
+    padding: 14px 18px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+.home-btn .btn:hover {
+    background: #fff;
+    color: #000;
+}
+
 .form-box{
     width: 380px;
     height: 480px;
     position: relative;
     margin: 6% auto;
-    background:#EAEFF2  ;
     padding: 5px;
     overflow: hidden;
     border-radius: 15px 50px 30px;
+    background:#FFF;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 
 }
 .button-box{
-    width: 220px;
+    width: 240px;
     margin: 35px auto;
     position: relative;
     box-shadow: 0 0 20px 9x #ff61241f;
@@ -97,7 +144,25 @@ span{
 }
 #login{
     left: 50px;
+    top: 170px;
 }
 #register{
     left: 450px;
+    top: 150px;
+}
+
+/* ----- CHANGE THE SCROLL BAR DESIGN ----- */
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 25px;
+}
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background: #ccc;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #bbb;
 }

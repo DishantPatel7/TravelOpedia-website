@@ -14,17 +14,14 @@ html {
     user-select: none;
 }
 body {
-    /* background: url(images/bg-1.jpg); */
+    background: url(images/coastline.jpg);
     background-size: cover;
     max-height: 100%;
-    /* display: flex; 
-    display: -webkit-flex; 
-    -webkit-justify-content: center; 
-    -webkit-align-items: center; 
-    justify-content: center; 
-    align-items: center;  */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
 }
-#myvideo{
+/* #myvideo{
     position: fixed;
     right: 0;
     bottom: 0;
@@ -32,13 +29,60 @@ body {
     max-width: 100%;
     height: auto;
     z-index: -1;
-  }
+} */
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.home-btn{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+/* .home-btn .btn{
+    border-radius: 11px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    top: 100px;
+    padding: 7px 24px;
+    font-weight: bold;
+    transition: 0.2s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.home-btn .btn:hover{
+    color: #000000;
+    background: #fff;
+    transition: 0.2s ease;
+} */
+
+
+.home-btn .btn {
+    border: 1px solid #fff;
+    padding: 14px 18px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+.home-btn .btn:hover {
+    background: #fff;
+    color: #000;
+}
+
 h1{
+    width: 600px;
     margin-top: 2rem;
     margin-bottom: 3rem;
     display: flex;
     max-width: 600px;
-    margin-left: auto;
+    margin-left: 20%;
     margin-right: auto;
     text-align: center;
     justify-content: center;
@@ -197,4 +241,20 @@ h1{
 }
 .card:hover .card__info-hover{
     opacity: 1;
+}
+
+/* ----- CHANGE THE SCROLL BAR DESIGN ----- */
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 25px;
+}
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background: #ccc;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #bbb;
 }
